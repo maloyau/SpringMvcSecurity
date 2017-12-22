@@ -1,4 +1,4 @@
-package com.serhii.springmvc.models;
+package com.serhii.springmvc.entities;
 
 import lombok.Data;
 

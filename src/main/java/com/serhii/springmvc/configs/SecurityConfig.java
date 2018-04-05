@@ -23,7 +23,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-        auth.userDetailsService(s -> new CustomUserDetails(userRepository.findByUsername(s)));
+        auth.userDetailsService(s -> new CustomUserDetails(userRepository.findUserByUsername(s)));
     }
 
     @Override
